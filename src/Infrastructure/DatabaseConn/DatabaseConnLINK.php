@@ -18,6 +18,7 @@ class DatabaseConnLINK{
     function Open(){
         $this->CONN = new mysqli($this->HOST,$this->USERNAME,$this->DATABASE,$this->PASSWORD);
     }
+    
     function getStatus(){
         if($this->CONN->connect_errno){
             $response = new ConnectionTestResponse(false,$this->CONN->connect_error);
