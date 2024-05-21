@@ -16,10 +16,11 @@ class DatabaseConnLINK{
     }
 
     function Open(){
-        $this->CONN = new mysqli($this->HOST,$this->USERNAME,$this->DATABASE,$this->PASSWORD);
+        $this->CONN = new mysqli($this->HOST,$this->USERNAME,$this->PASSWORD,$this->DATABASE);
     }
     
     function getStatus(){
+        $this->Open();
         if($this->CONN->connect_errno){
             $response = new ConnectionTestResponse(false,$this->CONN->connect_error);
         }else{
