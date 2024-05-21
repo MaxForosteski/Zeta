@@ -8,3 +8,5 @@ xhttp.onreadystatechange = function() {
 
 xhttp.open("GET","tests/ConnectionTests/databaseConnTest.php",true);
 xhttp.send();
+
+window.location.pathname = "Zeta/UI/View/Login.html";
