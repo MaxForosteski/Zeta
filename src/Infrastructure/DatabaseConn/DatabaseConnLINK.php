@@ -22,7 +22,7 @@ class DatabaseConnLINK{
     function getStatus(){
         $this->Open();
         if($this->CONN->connect_errno){
-            $response = new ConnectionTestResponse(false,$this->CONN->connect_error);
+            $response = new ConnectionTestResponse(false,"Erro ao tentar se conectar ao banco de dados");
         }else{
             $response = new ConnectionTestResponse(true,"OK");
         }
