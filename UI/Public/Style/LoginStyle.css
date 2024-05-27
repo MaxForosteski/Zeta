@@ -17,8 +17,24 @@
     flex-direction: column;
 }
 
+
+
 .title{
     font-size: 150%;
+    color: rgb(80, 80, 80);
+    margin-bottom: 7%;
+}
+
+#username{
+    border:solid 1px rgb(80, 80, 80);
+    border-radius: 4px;
+    margin-bottom: 15%;
+}
+
+#password{
+    border:solid 1px rgb(80, 80, 80);
+    border-radius: 4px;
+    margin-bottom: 15%;
 }
 /*Fim Coluna 1*/
 
